@@ -4,6 +4,12 @@ body {
     background-color: #fff9e6; /* 淡黄色背景 */
     font-family: 'Open Sans', sans-serif;
   }
+  .section-content p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.2em; /* 增加段落间距 */
+  }
   
   .profile-section {
     display: flex;
@@ -85,5 +91,8 @@ body {
     height: auto;
     margin-right: 1em;
     border-radius: 8px;
+
+
+      
   }
   

@@ -11,13 +11,136 @@
   <meta name="author" content="Yibo Peng">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css">
-  <link rel="stylesheet" href="css/style.css"> <!-- 引入外部CSS文件 -->
+  <style>
+    body {
+      background-color: #fff9e6;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .section-content p {
+      font-size: 1em;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .intro-section p {
+      margin-bottom: 2.0em;
+    }
+
+    .research-entry p, .project-entry p {
+      margin-bottom: 0;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      margin: 2em auto;
+      padding: 2em;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+
+    .profile-photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 100%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-right: 2em;
+    }
+
+    .profile-info h2 {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .profile-info h3 {
+      font-size: 1.2em;
+      color: #666;
+      margin: 0.2em 0;
+    }
+
+    .profile-info p {
+      font-size: 1em;
+      color: #333;
+      margin: 0.5em 0;
+    }
+
+    .social-icons {
+      margin-top: 1em;
+    }
+
+    .social-icons a {
+      font-size: 1.5em;
+      margin-right: 0.5em;
+      color: #666;
+    }
+
+    .social-icons a:hover {
+      color: #000;
+    }
+
+    .section-content {
+      max-width: 800px;
+      margin: 2em auto;
+    }
+
+    .section-content > h3 {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 2em 0 1em 0;
+    }
+
+    .research-entry, .project-entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2em;
+      background-color: #fff;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .research-entry img, .project-entry img {
+      width: 250px;
+      height: auto;
+      margin-right: 1em;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .research-entry div, .project-entry div {
+      flex: 1;
+    }
+
+    .research-entry p:first-child, .project-entry p:first-child {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    .research-entry p, .project-entry p {
+      margin-bottom: 0.5em;
+      line-height: 1.6;
+    }
+
+    .research-entry a, .project-entry a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    .research-entry a:hover, .project-entry a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
   <section class="section">
     <div class="container">
-      <!-- 个人信息部分 -->
+      <!-- Profile Section -->
       <div class="profile-section">
         <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
         <div class="profile-info">
@@ -38,46 +161,40 @@
           </div>
         </div>
       </div>
-      <!-- 自我介绍部分 -->
+
+      <!-- Introduction Section -->
       <div class="section-content intro-section">
         <h3 id="intro">Intro</h3>
         <p>
-          I am a second-year master's student major in Artificial Intelligence Engineering at Carnegie Mellon University, expecting to graduate in December 2024. 
+          I am a second-year master's student major in Artificial Intelligence Engineering at Carnegie Mellon University, expecting to graduate in December 2024.
         </p>
         <p>
-          Under the guidance of PhD <a href="https://zorazrw.github.io/" target="_blank" style="text-decoration: underline;">Zora (Zhiruo) Wang</a>, our work focuses on <strong>Retrieval-Augmented Generation (RAG), long context models, and code generation</strong>. In addition to NLP, I have also gained experience in efficient inference for large language models under the mentorship of <a href="https://dreaming-panda.github.io/" target="_blank" style="text-decoration: underline;">PhD Zhuoming Chen</a>. This work involved <strong> model inference for deployment efficiency</strong>, a topic within the MLSys field.
+          Under the guidance of <a href="https://zorazrw.github.io/" target="_blank" style="text-decoration: underline;">PhD Zora (Zhiruo) Wang</a>, our work focuses on <strong>Retrieval-Augmented Generation (RAG), long context models, and code generation</strong>. In addition to NLP, I have also gained experience in efficient inference for large language models under the mentorship of <a href="https://dreaming-panda.github.io/" target="_blank" style="text-decoration: underline;">PhD Zhuoming Chen</a>. This work involved <strong>model inference for deployment efficiency</strong>, a topic within the MLSys field.
         </p>
         <p>
           Prior to CMU, I completed dual Bachelor's degrees in Computer Science at Beijing Jiaotong University and Lancaster University, where I conducted research on <strong>Data Augmentation with</strong> <a href="https://scholar.google.com/citations?user=RMlrOvQAAAAJ&hl=zh-CN" target="_blank" style="text-decoration: underline;">Prof. Jidong Yuan</a>.
         </p>
-
         <p>
-          My research interests broadly span <strong>Natural Language Processing and Machine Learning Systems (MLSys)</strong>. I am seeking a <strong>research assistant</strong> position starting in <strong>Spring 2025</strong>.
+          My research interests broadly span <strong>Natural Language Processing</strong>. I am seeking a <strong>research assistant</strong> position starting in <strong>Spring 2025</strong>.
         </p>
-        
         <p>
           Feel free to reach out and review my <a href="files/ra_YIBOP.pdf" target="_blank">CV</a> for more details about my research experience and academic background.
         </p>
       </div>
 
-      <!-- research -->
+      <!-- Research Section -->
       <div class="section-content">
         <h3 id="research">Research</h3>
-
+        
         <h3>2024</h3>
         <div class="research-entry">
-          <!-- <img src="images/research/2022_GAN.jpg" alt="Research 2022"> -->
           <div>
             <p><i><strong>Can Long-Context Language Models Solve Repository-Level Code Generation? (in progress)</strong></i></p>
-            <p>• Implemented an experimental framework to compare long context models with Retrieval-Augmented Generation (RAG) for code generation, using Unlimiformer to extend model’s input context lengths.</p>
-            <p>• Conducted experiments adjusting context lengths to explore their impact on code generation quality, identifying
-              optimal ranges and revealing trade-offs between context length and noise.</p>
-            <p>• Demonstrated that RAG maintained superior performance over long context models, highlighting its
-              effectiveness in organizing and utilizing large-scale information even when extensive context is available.</p>
-            <!-- <a href="https://www.youtube.com/watch?v=5PyejDxeI24&t=22s" target="_blank">[Demo]</a> -->
+            <p>• Implemented an experimental framework to compare long context models with Retrieval-Augmented Generation (RAG) for code generation, using Unlimiformer to extend model's input context lengths.</p>
+            <p>• Conducted experiments adjusting context lengths to explore their impact on code generation quality, identifying optimal ranges and revealing trade-offs between context length and noise.</p>
+            <p>• Demonstrated that RAG maintained superior performance over long context models, highlighting its effectiveness in organizing and utilizing large-scale information even when extensive context is available.</p>
           </div>
         </div>
-
 
         <h3>2022</h3>
         <div class="research-entry">
@@ -93,55 +210,45 @@
         </div>
       </div>
 
-      <h3 id="project">Project</h3>
-
-      <h3>2024</h3>
-      <div class="project-entry">
-        <img src="images/project/2024_unlimiformer.jpg" alt="Project 2024">
-        <div>
-          <p><i><strong>Unlimiformer: Long-Range Transformers with Unlimited Length Input</strong></i></p>
-          <p>• Reproduced Unlimiformer to extend input length in code generation tasks, using k-nearest neighbors (kNN)
-            retrieval to handle long-distance inputs without increasing computational complexity.</p>
-          <p>• Introduced Repocoder RAG method for retrieval and tailored to the code snippets of code generation.</p>
-          <p>• Improved model performance with Unlimiformer, achieving significant gains in EM (Exact Match) and ES
-            (Evaluation Score) when handling input sequences beyond the original context length limit.</p>
-          <!-- <a href="https://www.youtube.com/watch?v=5PyejDxeI24&t=22s" target="_blank">[Demo]</a> -->
-        </div>
-      </div>
-
-      <!-- <h3>2022</h3> -->
-      <div class="project-entry">
-        <img src="images/project/2024_sps.jpg" alt="Project 2024">
-        <div>
-          <p><i><strong>LLM Speculative Sampling</strong></i></p>
-          <p>• Implemented the Speculative Decoding algorithm, improving inference speed for large Transformer models through
-            parallel computation, achieving 2-3x acceleration in practical tests.</p>
-          <p>• Designed KV Cache optimization to reduce memory bandwidth bottlenecks and enhance inference efficiency.</p>
-          <p>• Applied the acceleration technique to code generation tasks, conducting experimental validation using Salesforce
-            Codegen model series (ranging from 350M to 6B parameters).</p>
-          <!-- <a href="https://www.youtube.com/watch?v=5PyejDxeI24&t=22s" target="_blank">[Demo]</a> -->
-        </div>
-      </div>
-
-      <!-- <h3>2022</h3> -->
-      <div class="project-entry">
-        <img src="images/project/2024_repocoder.jpg" alt="Project 2024">
-        <div>
-          <p><i><strong>RepoCoder: Repository-Level Code Completion Through Iterative Retrieval and Generation</strong></i></p>
-          <p>• Set up an experimental environment for testing, including line, API, and function level code completion tasks.</p>
-          <p>• Enhanced retrieval strategy to analyze code generation performance on state-of-the-art LLM.</p>
-          <p>• Used denoising autoencoder as the generator.</p>
-          <p>• Optimized the retrieval-generation pipeline through adding the prompt length which improved retrieval quality
-            and increased the EM (Exact Match) score by over 5 % compared to the original baseline.</p>
-          <!-- <a href="https://www.youtube.com/watch?v=5PyejDxeI24&t=22s" target="_blank">[Demo]</a> -->
-        </div>
-      </div>
-            <!-- <h3>2022</h3> -->
+      <!-- Project Section -->
+      <div class="section-content">
+        <h3 id="project">Project</h3>
+        
+        <h3>2024</h3>
+        <div class="project-entry">
+          <img src="images/project/2024_unlimiformer.jpg" alt="Project 2024">
+          <div>
+            <p><i><strong>Unlimiformer: Long-Range Transformers with Unlimited Length Input</strong></i></p>
+            <p>• Reproduced Unlimiformer to extend input length in code generation tasks, using k-nearest neighbors (kNN) retrieval to handle long-distance inputs without increasing computational complexity.</p>
+            <p>• Introduced Repocoder RAG method for retrieval and tailored to the code snippets of code generation.</p>
+            <p>• Improved model performance with Unlimiformer, achieving significant gains in EM (Exact Match) and ES (Evaluation Score) when handling input sequences beyond the original context length limit.</p>
           </div>
+        </div>
+
+        <div class="project-entry">
+          <img src="images/project/2024_sps.jpg" alt="Project 2024">
+          <div>
+            <p><i><strong>LLM Speculative Sampling</strong></i></p>
+            <p>• Implemented the Speculative Decoding algorithm, improving inference speed for large Transformer models through parallel computation, achieving 2-3x acceleration in practical tests.</p>
+            <p>• Designed KV Cache optimization to reduce memory bandwidth bottlenecks and enhance inference efficiency.</p>
+            <p>• Applied the acceleration technique to code generation tasks, conducting experimental validation using Salesforce Codegen model series (ranging from 350M to 6B parameters).</p>
+          </div>
+        </div>
+
+        <div class="project-entry">
+          <img src="images/project/2024_repocoder.jpg" alt="Project 2024">
+          <div>
+            <p><i><strong>RepoCoder: Repository-Level Code Completion Through Iterative Retrieval and Generation</strong></i></p>
+            <p>• Set up an experimental environment for testing, including line, API, and function level code completion tasks.</p>
+            <p>• Enhanced retrieval strategy to analyze code generation performance on state-of-the-art LLM.</p>
+            <p>• Used denoising autoencoder as the generator.</p>
+            <p>• Optimized the retrieval-generation pipeline through adding the prompt length which improved retrieval quality and increased the EM (Exact Match) score by over 5 % compared to the original baseline.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Font Awesome 图标 -->
   <script src="https://kit.fontawesome.com/970bf0f05d.js" crossorigin="anonymous"></script>
 </body>
 

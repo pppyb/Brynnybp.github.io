@@ -8,9 +8,9 @@ body {
     font-size: 1em;
     color: #333;
     line-height: 1.6;
-    margin-bottom: 1.2em; /* 增加段落间距 */
-  }
-  
+    margin-bottom: 2.0em; /* 增加段落底部间距，使每段空一行 */
+}
+
   .profile-section {
     display: flex;
     align-items: center;

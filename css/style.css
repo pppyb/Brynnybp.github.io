@@ -1,9 +1,7 @@
-/* style.css */
-
 body {
     background-color: #fff9e6; /* 淡黄色背景 */
     font-family: 'Open Sans', sans-serif;
-  }
+}
 
 /* 通用段落样式 */
 .section-content p {
@@ -22,7 +20,7 @@ body {
     margin-bottom: 0;
 }
 
-  .profile-section {
+.profile-section {
     display: flex;
     align-items: center;
     margin: 2em auto;
@@ -31,79 +29,76 @@ body {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-  }
-  
-  .profile-photo {
+}
+
+.profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-right: 2em;
-  }
-  
-  .profile-info h2 {
+}
+
+.profile-info h2 {
     font-size: 1.8em;
     font-weight: bold;
     margin: 0;
-  }
-  
-  .profile-info h3 {
+}
+
+.profile-info h3 {
     font-size: 1.2em;
     color: #666;
     margin: 0.2em 0;
-  }
-  
-  .profile-info p {
+}
+
+.profile-info p {
     font-size: 1em;
     color: #333;
     margin: 0.5em 0;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     margin-top: 1em;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     font-size: 1.5em;
     margin-right: 0.5em;
     color: #666;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #000;
-  }
-  
-  .section-content {
+}
+
+.section-content {
     max-width: 800px;
     margin: 2em auto;
-  }
-  
-  .section-content h3 {
+}
+
+.section-content h3 {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 0.5em;
-  }
-  
-  .section-content p {
+}
+
+.section-content p {
     font-size: 1em;
     color: #333;
     line-height: 1.6;
-  }
-  
-  .research-entry {
+}
+
+.research-entry {
     display: flex;
     align-items: flex-start;
     margin-bottom: 2em;
-  }
-  
-  .research-entry img {
-    width: 150px;
+}
+
+/* 调整 research 部分的图片大小 */
+.research-entry img {
+    width: 250px; /* 增大图片宽度 */
     height: auto;
     margin-right: 1em;
     border-radius: 8px;
-
-
-      
-  }
-  
+}

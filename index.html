@@ -8,94 +8,7 @@
   <title>Yibo Peng's Homepage</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css">
-  <style>
-    body {
-      background-color: #fff9e6; /* 淡黄色背景 */
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .profile-section {
-      display: flex;
-      align-items: center;
-      margin: 2em auto;
-      padding: 2em;
-      border-radius: 8px;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
-    }
-
-    .profile-photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-right: 2em;
-    }
-
-    .profile-info h2 {
-      font-size: 1.8em;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .profile-info h3 {
-      font-size: 1.2em;
-      color: #666;
-      margin: 0.2em 0;
-    }
-
-    .profile-info p {
-      font-size: 1em;
-      color: #333;
-      margin: 0.5em 0;
-    }
-
-    .social-icons {
-      margin-top: 1em;
-    }
-
-    .social-icons a {
-      font-size: 1.5em;
-      margin-right: 0.5em;
-      color: #666;
-    }
-
-    .social-icons a:hover {
-      color: #000;
-    }
-
-    .section-content {
-      max-width: 800px;
-      margin: 2em auto;
-    }
-
-    .section-content h3 {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
-
-    .section-content p {
-      font-size: 1em;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .research-entry {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 2em;
-    }
-
-    .research-entry img {
-      width: 150px;
-      height: auto;
-      margin-right: 1em;
-      border-radius: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css"> <!-- 引入外部CSS文件 -->
 </head>
 
 <body>
@@ -103,7 +16,7 @@
     <div class="container">
       <!-- 个人信息部分 -->
       <div class="profile-section">
-        <img src="images/sfphoto.jpg" alt="Profile Photo" class="profile-photo">
+        <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
         <div class="profile-info">
           <h2>Brynn (Yibo) Peng</h2>
           <h3>彭艺博</h3>
@@ -126,38 +39,35 @@
       <!-- Introduction Section -->
       <div class="section-content">
         <h3 id="intro">Intro</h3>
-        <p>I am a second-year master student in the Robotics Institute at Carnegie Mellon University, working with an amazing PhD <a href="https://zorazrw.github.io/" target="_blank" style="text-decoration: underline;">Zora (Zhiruo) Wang</a> on Retrieval-Augmented Generation (RAG), long context model, and code generation. Previously, I obtained double Bachelor’s degrees at Beijing Jiaotong University and Lancaster University, majoring in Computer Science, where I worked with Prof. <a href="https://scholar.google.com/citations?user=RMlrOvQAAAAJ&hl=zh-CN" target="_blank" style="text-decoration: underline;">Jidong Yuan</a> on Data Augmentation.</p>
-        <p>I am broadly interested in NLP, especially RAG, long context models, and code generation. Currently seeking a research assistant position starting in spring 2025. Feel free to reach out and check my <a href="files/ra_YIBOP.pdf" target="_blank">CV</a>.</p>
+        <p>
+          I am a second-year master's student in the ECE Department at Carnegie Mellon University. Under the guidance of PhD <a href="https://zorazrw.github.io/" target="_blank" style="text-decoration: underline;">Zora (Zhiruo) Wang</a>, my research focuses on <strong>Retrieval-Augmented Generation (RAG), long context models, and code generation</strong>.
+        </p>
+        <p>
+          My research interests broadly span Natural Language Processing, and I am seeking a <strong>research assistant</strong> position starting in <strong>Spring 2025</strong>.
+        </p>
+        <p>
+          Prior to CMU, I completed dual Bachelor's degrees in Computer Science at Beijing Jiaotong University and Lancaster University, where I conducted research on Data Augmentation with <a href="https://scholar.google.com/citations?user=RMlrOvQAAAAJ&hl=zh-CN" target="_blank" style="text-decoration: underline;">Prof. Jidong Yuan</a>.
+        </p>
+        <p>
+          Feel free to reach out and review my <a href="files/ra_YIBOP.pdf" target="_blank">CV</a> for more details about my research experience and academic background.
+        </p>
       </div>
 
       <!-- Research Section -->
       <div class="section-content">
         <h3 id="research">Research</h3>
-
         <div class="research-entry">
           <img src="images/research/2022_GAN.jpg" alt="Research 2022">
           <div>
             <p><i>Time Series Augmentation Based on GAN</i></p>
-            <p>• Combined unsupervised and supervised learning to capture dynamic and static features.<br>
-               • Used denoising autoencoder as the generator.</p>
+            <p>• Combine unsupervised and supervised learning.</p>
+            <p>• Capture dynamic and static features.</p>
+            <p>• Used denoising autoencoder as the generator.</p>
+            <p>• Use gated recurrent unit imputation (GRUI) neural network</p>
             <a href="https://www.youtube.com/watch?v=5PyejDxeI24&t=22s" target="_blank">[Demo]</a>
           </div>
         </div>
-
-        <div class="research-entry">
-          <img src="images/research/2023_dexart.png" alt="Research 2023">
-          <div>
-            <p><i>DexArt: Benchmarking Generalizable Dexterous Manipulation with Articulated Objects</i><br>
-              <b>Chen Bao</b>, Helin Xu, Yuzhe Qin, Xiaolong Wang.</p>
-            <p>Published in Computer Vision and Pattern Recognition Conference (CVPR), 2023.</p>
-            <a href="https://www.chenbao.tech/dexart/static/paper/dexart.pdf" target="_blank">[Paper]</a>
-            <a href="https://github.com/Kami-code/dexart-release" target="_blank">[Code]</a>
-            <a href="https://www.chenbao.tech/dexart/" target="_blank">[Website]</a>
-            <a href="https://www.youtube.com/watch?v=V_EYQJO1W_U" target="_blank">[Demo]</a>
-          </div>
-        </div>
       </div>
-
     </div>
   </section>
 

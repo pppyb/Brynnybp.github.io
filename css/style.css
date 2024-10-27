@@ -1,36 +1,89 @@
+/* style.css */
+
 body {
-    font-family: 'Open Sans';
-    scroll-behavior: smooth;
-    font-size: 14px;
-}
-
-.details h3{
-    font-weight:600;
-    font-size:1em;
-    color:#000;
-}
-
-
-.sticky {
-    position: sticky;
-    top: 30px;
-}
-
-.social{
-    /*float: left;*/
-    padding-bottom: 2em;
-    padding-top: 1em;
+    background-color: #fff9e6; /* 淡黄色背景 */
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 2em;
+  }
+  
+  .profile-info h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .profile-info h3 {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0.2em 0;
+  }
+  
+  .profile-info p {
     font-size: 1em;
-}
-
-.sidebar{
-    /*float: left;*/
-    padding-bottom: 2em;
-    padding-top: 1em;
+    color: #333;
+    margin: 0.5em 0;
+  }
+  
+  .social-icons {
+    margin-top: 1em;
+  }
+  
+  .social-icons a {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: #666;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
+  .section-content {
+    max-width: 800px;
+    margin: 2em auto;
+  }
+  
+  .section-content h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .section-content p {
     font-size: 1em;
-}
-
-a:link { color: rgb(0, 0, 100);text-decoration: none; }
-a:hover { color: rgb(200, 0, 0) }
-a:active { color: rgb(255, 0, 102) }
-a:visited{color: rgb(0, 0, 100)}
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .research-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+  }
+  
+  .research-entry img {
+    width: 150px;
+    height: auto;
+    margin-right: 1em;
+    border-radius: 8px;
+  }
+  
